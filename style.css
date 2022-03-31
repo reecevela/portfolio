@@ -1,0 +1,58 @@
+:root {
+  --crop-size: 72px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  min-width: 100vw;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+
+.header {
+  display: flex;
+  background: #2e2e2e;
+  justify-content: space-around;
+  align-items: center;
+  padding: 8px;
+}
+
+.header-links ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5px;
+}
+
+.header-links ul li {
+  margin: 16px;
+}
+
+.header-links a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #e5e7eb;
+}
+
+/*Going to be honest, I'm proud AF about this upcoming part.
+So the div that the logo is in cuts off the image that overflows.
+Like imagine having a picture, then putting a piece of paper on
+it and cutting a hole out of it - you only see what fits in the hole.
+So the image's margin pulls the image to where it needs to be to 
+be seen through the viewport.
+*/
+.crop-container {
+  height: var(--crop-size);
+  width: var(--crop-size);
+  overflow: hidden;
+  border-radius: 100%; /* This makes it circular*/
+
+}
+
+.header-img {
+  width: calc(var(--crop-size)*2);
+  height: calc(var(--crop-size)*2);
+  margin: calc(var(--crop-size)/-2) 0 0 calc(var(--crop-size)/-2);
+}
