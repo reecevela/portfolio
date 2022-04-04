@@ -19,7 +19,7 @@ body {
   justify-content: flex-start;
 }
 
-/* GALLERY SECTION */
+/* GALLERY SECTION - INCOMPLETE AT THE MOMENT*/
 
 .gallery-section {
   display: flex;
@@ -67,6 +67,12 @@ body {
   width: 450px;
   height: auto;
   margin: -50px 0 0 -150px;
+}
+
+#urza {
+  width:250px;
+  height: auto;
+  margin: 0 0 0 -37px;
 }
 
 /* HOME SECTION */
