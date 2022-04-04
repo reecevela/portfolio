@@ -160,10 +160,21 @@ body {
   align-items: center;
 }
 
-#scholastic {
-  width: 450px;
+#odin {
+  width: 180px;
   height: auto;
-  margin: -50px 0 0 -150px;
+}
+
+#js-logo {
+  height: 160px;
+  width: auto;
+  margin: 10px;
+}
+
+#tkd {
+  width: 180px;
+  height: auto;
+  margin: -20px 0 0 0;
 }
 
 #urza {
