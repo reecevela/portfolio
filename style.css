@@ -10,6 +10,7 @@ body {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', 
     sans-serif;
   font-size: 18px;
+  overflow-x: hidden;
 }
 
 .body {
@@ -19,11 +20,49 @@ body {
   justify-content: flex-start;
 }
 
-/* GALLERY SECTION - INCOMPLETE AT THE MOMENT*/
+/*--------------------------------------CONTACT SECTION---------------------------------*/
+
+
+
+/*-------------------------------------- QUOTE SECTION --------------------------------*/
+
+.quote-section {
+  padding-top: 10%;
+  padding-bottom: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #e5e7eb;
+}
+
+.quote-section .quote {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.quote-section p {
+  font-size: 36px;
+  font-weight: lighter;
+  font-style: italic;
+  color: #1f2937;
+  max-width: 500px;
+  margin: 36px;
+}
+
+.quote-section .quote-speaker {
+  align-self: flex-end;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* -------------------------GALLERY SECTION - INCOMPLETE AT THE MOMENT--------------------*/
 
 .gallery-section {
   display: flex;
-  flex-flow: column;
+  flex-flow: column nowrap;
   align-items: center;
 }
 
@@ -75,7 +114,7 @@ body {
   margin: 0 0 0 -37px;
 }
 
-/* HOME SECTION */
+/* -------------------------------------HOME SECTION -------------------------------------*/
 
 .home-section {
   display: flex;
@@ -129,14 +168,14 @@ body {
   margin: 8px 0;
 }
 
-/* HEADER SECTION */
+/*----------------------------------------- HEADER SECTION -------------------------*/
 
 .header {
   display: flex;
   background: #2e2e2e;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  padding: 8px;
+  padding: 8px 15% 8px 15%;
 }
 
 .header-links ul {
