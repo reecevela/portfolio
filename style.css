@@ -165,6 +165,18 @@ body {
   height: auto;
 }
 
+#odin-link {
+  color: #3882f6;
+}
+
+#odin-link:hover::before {
+  content: "-> ";
+}
+
+#odin-link:hover::after {
+  content: " <-";
+}
+
 #js-logo {
   height: 160px;
   width: auto;
