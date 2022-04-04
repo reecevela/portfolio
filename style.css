@@ -22,7 +22,52 @@ body {
 
 /*--------------------------------------CONTACT SECTION---------------------------------*/
 
+.contact-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
+.contact-banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #3882f6;
+  border-radius: 8px;
+  width: 60%;
+  margin: 64px 0;
+  max-width: 700px;
+  padding: 5%;
+  color: #f9faf8;
+}
+
+.contact-text .title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.contact-text .message {
+  font-size: 14px;
+}
+
+.button {
+  color: #f9faf8;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  background-color: #3882f6;
+  border-radius: 8px;
+  padding: 8px 16px;
+  margin: 8px 0;
+  max-height: fit-content;
+}
+
+.contact-banner .button {
+  border: 2px solid #f9faf8;
+  margin: 8px;
+}
 
 /*-------------------------------------- QUOTE SECTION --------------------------------*/
 
@@ -50,12 +95,14 @@ body {
   color: #1f2937;
   max-width: 500px;
   margin: 36px;
+
 }
 
 .quote-section .quote-speaker {
   align-self: flex-end;
   font-size: 24px;
   font-weight: bold;
+  margin-right: 32px;
 }
 
 /* -------------------------GALLERY SECTION - INCOMPLETE AT THE MOMENT--------------------*/
@@ -70,6 +117,7 @@ body {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
+  width: 90%;
 }
 
 .gallery-title {
@@ -155,17 +203,6 @@ body {
   margin: -150px 0 0 -60px;
   width: 500px;
   height: 600px;
-}
-
-.button {
-  color: #e5e7eb;
-  font-size: 18px;
-  font-weight: bold;
-  text-decoration: none;
-  background-color: #3882f6;
-  border-radius: 8px;
-  padding: 8px 16px;
-  margin: 8px 0;
 }
 
 /*----------------------------------------- HEADER SECTION -------------------------*/
