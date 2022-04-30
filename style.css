@@ -7,17 +7,16 @@
 
 body {
   margin: 0;
-  padding: 0;
+  padding: 57px 0 0 0;
   min-height: 100vh;
   min-width: 100vw;
   overflow-x: hidden;
   background: rgb(248,252,81);
   background: linear-gradient(127deg, rgba(248,252,81,1) 0%, rgba(248,252,81,1) 10%,
    rgba(0,177,255,1) 35%, rgba(209,87,222,1) 90%, rgba(209,87,222,1) 100%);
-  
   font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 18px;
-  color: black;
+  color: rgb(68, 68, 68);
   background-color: white;
 
   display: flex;
@@ -27,23 +26,49 @@ body {
   text-align: center;
 }
 
-.body {
-  
+.page-section {
+  margin: 15vh auto;
+  padding: 10vh 10vw;
+  max-width: 600px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 8px 8px 4px rgba(0,0,0,.2);
+  transform: translateY(10vh);
+  opacity: 0;
+}
+
+.page-section * {
+  opacity: 0;
+}
+
+.page-section ul {
+  text-align: left;
 }
 
 /*--------------------------------------FOOTER SECTION----------------------------------*/
 
-.footer {
+.page-footer {
   justify-self: flex-end;
+  background-color: rgb(53, 53, 53);
+  color: white;
 }
 
 
 /*----------------------------------------- HEADER SECTION -------------------------*/
 
+header.nav-wrapper {
+  z-index: 999;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
 nav {
   display: flex;
   justify-content: center;
-  
+  background: rgb(240,240,240);
+  margin: 0;
 }
 
 nav ul {
@@ -60,14 +85,13 @@ nav ul li {
 
 nav a {
   text-decoration: none;
-  color: white;
+  color: rgb(65, 65, 65);
+  padding: 4px 16px;
+  border-radius: 2px;
 }
 
 nav a:hover {
-  color: rgba(0,0,0,0);
-  background-color: white;
-  padding: 4px 16px;
-  border-radius: 2px;
+  color: #000;
 }
 
 /*Going to be honest, I'm proud AF about this upcoming part.
@@ -89,4 +113,45 @@ where it needs to be to be seen through the viewport.*/
   height: calc(var(--crop-size)*2);
   margin: calc(var(--crop-size)/-2) 0 0 calc(var(--crop-size
     )/-2);
+}
+
+strong {
+  color: black;
+}
+
+/* TRANSITIONS */
+
+@keyframes slideUpFadeIn {
+  60% {
+    transform: translateY(0);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyFrames FadeIn {
+  100% {
+    opacity: 1;
+  }
+}
+
+
+
+.loaded .page-section {
+  animation: slideUpFadeIn 2s linear 0s forwards;
+}
+
+.loaded .page-section .slow-entry {
+  animation: FadeIn 2s linear 3s forwards;
+}
+
+.loaded .page-section .fast-entry {
+  animation: FadeIn 1s linear 0s forwards;
+}
+
+.loaded .page-section * {
+  animation: FadeIn 1s linear 1s forwards;
 }
