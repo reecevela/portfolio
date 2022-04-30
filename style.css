@@ -1,5 +1,8 @@
 :root {
   --crop-size: 64px;
+  --yel-rv: rgba(248,252,81,1);
+  --blu-rv: rgba(0,177,255,1);
+  --pur-rv: rgba(209,87,222,1);
 }
 
 body {
@@ -7,263 +10,64 @@ body {
   padding: 0;
   min-height: 100vh;
   min-width: 100vw;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  font-size: 18px;
   overflow-x: hidden;
+  background: rgb(248,252,81);
+  background: linear-gradient(127deg, rgba(248,252,81,1) 0%, rgba(248,252,81,1) 10%,
+   rgba(0,177,255,1) 35%, rgba(209,87,222,1) 90%, rgba(209,87,222,1) 100%);
+  
+  font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 18px;
+  color: black;
+  background-color: white;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  text-align: center;
 }
 
 .body {
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-  justify-content: flex-start;
+  
 }
 
 /*--------------------------------------FOOTER SECTION----------------------------------*/
 
 .footer {
-  color:#e5e7eb;
-  background-color:#1f2937;
-  font-size: 18px;
-  align-self: flex-end;
-  padding: 16px;
-  text-align: center;
+  justify-self: flex-end;
 }
 
-/*--------------------------------------CONTACT SECTION---------------------------------*/
-
-.contact-section {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.contact-banner {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #3882f6;
-  border-radius: 8px;
-  width: 60%;
-  margin: 64px 0;
-  max-width: 700px;
-  padding: 5%;
-  color: #f9faf8;
-}
-
-.contact-text .title {
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 16px;
-}
-
-.contact-text .message {
-  font-size: 14px;
-}
-
-.button {
-  color: #f9faf8;
-  font-size: 18px;
-  font-weight: bold;
-  text-decoration: none;
-  text-align: center;
-  background-color: #3882f6;
-  border-radius: 8px;
-  padding: 8px 16px;
-  margin: 8px 0;
-  max-height: fit-content;
-}
-
-.contact-banner .button {
-  border: 2px solid #f9faf8;
-  margin: 8px;
-}
-
-/*-------------------------------------- QUOTE SECTION --------------------------------*/
-
-.quote-section {
-  padding-top: 10%;
-  padding-bottom: 10%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: #e5e7eb;
-}
-
-.quote-section .quote {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.quote-section p {
-  font-size: 36px;
-  font-weight: lighter;
-  font-style: italic;
-  color: #1f2937;
-  max-width: 500px;
-  margin: 36px;
-
-}
-
-.quote-section .quote-speaker {
-  align-self: flex-end;
-  font-size: 24px;
-  font-weight: bold;
-  margin-right: 32px;
-}
-
-/* -------------------------GALLERY SECTION - INCOMPLETE AT THE MOMENT--------------------*/
-
-.gallery-section {
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
-}
-
-.gallery {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
-  width: 90%;
-}
-
-.gallery-title {
-  font-size: 36px;
-  font-weight: 1000;
-  color: #1F2937;
-  margin: 32px;
-}
-
-.card-crop-box {
-  width: 180px;
-  height: 180px;
-  overflow: hidden;
-  border: #3882f6 2px solid;
-  border-radius: 8px;
-}
-
-.card-text {
-  padding: 8px;
-  text-align: center;
-}
-
-.card {
-  width: 200px;
-  height: 350px;
-  margin: 8px;
-  padding: 16px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-#odin {
-  width: 180px;
-  height: auto;
-}
-
-#odin-link {
-  color: #3882f6;
-}
-
-#odin-link:hover::before {
-  content: "-> ";
-}
-
-#odin-link:hover::after {
-  content: " <-";
-}
-
-#js-logo {
-  height: 160px;
-  width: auto;
-  margin: 10px;
-}
-
-#tkd {
-  width: 180px;
-  height: auto;
-  margin: -20px 0 0 0;
-}
-
-#urza {
-  width:250px;
-  height: auto;
-  margin: 0 0 0 -37px;
-}
-
-/* -------------------------------------HOME SECTION -------------------------------------*/
-
-.home-section {
-  display: flex;
-  flex-flow: row-reverse wrap;
-  justify-content: center;
-  padding: 16px;
-  background: #2e2e2e;
-  padding: 16px;
-}
-
-.home-content {
-  padding: 16px;
-  max-width: 300px;
-}
-
-.home-title {
-  font-size: 48px;
-  font-weight: 1000;
-  color: #f9faf8;
-}
-
-.home-text {
-  font-size: 18px;
-  max-width: 200px;
-  color: #e5e7eb;
-  margin: 8px 0 16px 0;
-}
-
-.home-crop-box {
-  width: 400px;
-  height: 300px;
-  overflow: hidden;
-  border-radius: 8px;
-}
-
-.home-crop-box img {
-  transform: scaleX(-1);
-  margin: -150px 0 0 -60px;
-  width: 500px;
-  height: 600px;
-}
 
 /*----------------------------------------- HEADER SECTION -------------------------*/
 
-.header {
+nav {
   display: flex;
-  background: #2e2e2e;
-  justify-content: space-between;
-  align-items: center;
-  padding: 8px 15% 8px 15%;
+  justify-content: center;
+  
 }
 
-.header-links ul {
+nav ul {
   list-style-type: none;
+  padding: 0;
   display: flex;
   justify-content: space-around;
-  align-items: center;
-  padding: 5px;
+  width: min(600px, 80%);
 }
 
-.header-links ul li {
-  margin: 0 16px;
+nav ul li {
+
 }
 
-.header-links a {
+nav a {
   text-decoration: none;
-  font-size: 18px;
-  color: #e5e7eb;
+  color: white;
+}
+
+nav a:hover {
+  color: rgba(0,0,0,0);
+  background-color: white;
+  padding: 4px 16px;
+  border-radius: 2px;
 }
 
 /*Going to be honest, I'm proud AF about this upcoming part.
@@ -278,10 +82,9 @@ where it needs to be to be seen through the viewport.*/
   width: var(--crop-size);
   overflow: hidden;
   border-radius: 100%; /* This makes it circular*/
-
 }
 
-.header-img {
+.crop-centered-img {
   width: calc(var(--crop-size)*2);
   height: calc(var(--crop-size)*2);
   margin: calc(var(--crop-size)/-2) 0 0 calc(var(--crop-size
