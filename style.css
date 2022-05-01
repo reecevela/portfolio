@@ -1,8 +1,11 @@
 :root {
   --crop-size: 64px;
-  --yel-rv: rgba(248,252,81,1);
-  --blu-rv: rgba(0,177,255,1);
-  --pur-rv: rgba(209,87,222,1);
+  --angle: 127deg;
+  --bg-main: white;
+  --bg-opp: rgb(53,53,53);
+  --txt-main: rgb(68, 68, 68);
+  --txt-em: black;
+  --txt-opp: white;
 }
 
 body {
@@ -11,13 +14,12 @@ body {
   min-height: 100vh;
   min-width: 100vw;
   overflow-x: hidden;
-  background: rgb(248,252,81);
-  background: linear-gradient(127deg, rgba(248,252,81,1) 0%, rgba(248,252,81,1) 10%,
+  background: rgb(0,177,255);
+  background: linear-gradient(var(--angle), rgba(248,252,81,1) 0%, rgba(248,252,81,1) 10%,
    rgba(0,177,255,1) 35%, rgba(209,87,222,1) 90%, rgba(209,87,222,1) 100%);
   font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 18px;
-  color: rgb(68, 68, 68);
-  background-color: white;
+  color: var(--txt-main);
 
   display: flex;
   flex-direction: column;
@@ -30,7 +32,7 @@ body {
   margin: 15vh auto;
   padding: 10vh 10vw;
   max-width: 600px;
-  background: white;
+  background: var(--bg-main);
   border-radius: 8px;
   box-shadow: 8px 8px 4px rgba(0,0,0,.2);
   transform: translateY(10vh);
@@ -49,8 +51,8 @@ body {
 
 .page-footer {
   justify-self: flex-end;
-  background-color: rgb(53, 53, 53);
-  color: white;
+  background-color: var(--bg-opp);
+  color: var(--txt-opp);
 }
 
 
@@ -67,7 +69,7 @@ header.nav-wrapper {
 nav {
   display: flex;
   justify-content: center;
-  background: rgb(240,240,240);
+  background: var(--bg-main);
   margin: 0;
 }
 
@@ -85,13 +87,13 @@ nav ul li {
 
 nav a {
   text-decoration: none;
-  color: rgb(65, 65, 65);
+  color: var(--txt-main);
   padding: 4px 16px;
   border-radius: 2px;
 }
 
 nav a:hover {
-  color: #000;
+  color: var(--txt-em);
 }
 
 /*Going to be honest, I'm proud AF about this upcoming part.
