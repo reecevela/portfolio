@@ -3,6 +3,7 @@
   --angle: 127deg;
   --bg-main: white;
   --bg-opp: rgb(53,53,53);
+  --bg-light: rgb(243,243,243);
   --txt-main: rgb(68, 68, 68);
   --txt-em: black;
   --txt-opp: white;
@@ -12,7 +13,8 @@ body {
   margin: 0;
   padding: 0;
   min-height: 100vh;
-  min-width: 100vw;
+  /*width: 100vw;*/
+  max-width: 100vw;
   overflow-x: hidden;
   background: rgb(0,177,255);
   background: linear-gradient(var(--angle), rgba(248,252,81,1) 0%, rgba(248,252,81,1) 10%,
@@ -27,6 +29,17 @@ body {
   align-items: stretch;
   text-align: center;
 }
+
+/* Removes horizontal scrolling from mobile devices */
+
+@media only screen and (max-width: 600px) {
+  html, body {
+    max-width: 100vw!important;
+    overflow-x: hidden!important;
+    height:auto!important;
+  }
+}
+
 
 /*--------------------------------- SECTION SECTION (nice) -----------------------------*/
 
@@ -51,10 +64,11 @@ body {
 
 .page-section.stretch {
   width: 80%;
+  align-self: stretch;
   overflow-x: hidden;
   margin: 15vh 0;
   text-align: left;
-  max-width: 100%;
+  max-width: 80%;
   border-radius: 0;
 }
 
@@ -70,9 +84,22 @@ body {
   text-align: left;
 }
 
-.page-section.in-view {
-  
+/*--------------------------SPECIAL WRAPPERS SECTION----------------------------*/
+
+.center-wrapper ul {
+  display: flex;
+  flex-flow: row wrap;
+  list-style-type: none;
 }
+
+.center-wrapper ul li {
+  margin: 4px 4px;
+  padding: 4px;
+  font-family: 'Courier New', Courier, monospace, sans-serif;
+  background-color: var(--bg-light);
+  border-radius: 2px;
+}
+
 
 /*--------------------------------------FOOTER SECTION----------------------------------*/
 
@@ -91,6 +118,7 @@ header.nav-wrapper {
   width: 100%;
   top: 0;
   left: 0;
+  margin: 0;
 }
 
 nav {
