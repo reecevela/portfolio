@@ -10,7 +10,7 @@
 
 body {
   margin: 0;
-  padding: 57px 0 0 0;
+  padding: 0;
   min-height: 100vh;
   min-width: 100vw;
   overflow-x: hidden;
@@ -28,15 +28,38 @@ body {
   text-align: center;
 }
 
+/*--------------------------------- SECTION SECTION (nice) -----------------------------*/
+
 .page-section {
+  overflow: hidden;
   margin: 15vh auto;
   padding: 10vh 10vw;
+  width: 70vw;
   max-width: 600px;
   background: var(--bg-main);
   border-radius: 8px;
   box-shadow: 8px 8px 4px rgba(0,0,0,.2);
-  transform: translateY(10vh);
+  transform: scaleX(10vh);
   opacity: 0;
+}
+
+.page-section.centered * {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.page-section.stretch {
+  width: 80%;
+  overflow-x: hidden;
+  margin: 15vh 0;
+  text-align: left;
+  max-width: 100%;
+  border-radius: 0;
+}
+
+.page-section p {
+  max-width: 300px;
 }
 
 .page-section * {
@@ -45,6 +68,10 @@ body {
 
 .page-section ul {
   text-align: left;
+}
+
+.page-section.in-view {
+  
 }
 
 /*--------------------------------------FOOTER SECTION----------------------------------*/
@@ -71,6 +98,7 @@ nav {
   justify-content: center;
   background: var(--bg-main);
   margin: 0;
+  box-shadow: 0px 8px 4px rgba(0,0,0,.2);
 }
 
 nav ul {
@@ -79,10 +107,6 @@ nav ul {
   display: flex;
   justify-content: space-around;
   width: min(600px, 80%);
-}
-
-nav ul li {
-
 }
 
 nav a {
@@ -95,6 +119,8 @@ nav a {
 nav a:hover {
   color: var(--txt-em);
 }
+
+/*-------------------------------MISC SECTION--------------------------------------*/
 
 /*Going to be honest, I'm proud AF about this upcoming part.
 So the div that the logo is in cuts off the image that overf-
@@ -121,9 +147,19 @@ strong {
   color: black;
 }
 
-/* TRANSITIONS */
+a:hover::before {
+  content: "<";
+}
 
-@keyframes slideUpFadeIn {
+a:hover::after {
+  content: ">";
+}
+/*------------------------------------- TRANSITIONS ---------------------------------*/
+
+@keyframes slideRightFadeIn {
+  0% {
+    transform: translateY(-10vh);
+  }
   60% {
     transform: translateY(0);
     opacity: 0.5;
@@ -143,7 +179,7 @@ strong {
 
 
 .loaded .page-section {
-  animation: slideUpFadeIn 2s linear 0s forwards;
+  animation: slideRightFadeIn 2s linear 0s forwards;
 }
 
 .loaded .page-section .slow-entry {
@@ -151,7 +187,7 @@ strong {
 }
 
 .loaded .page-section .fast-entry {
-  animation: FadeIn 1s linear 0s forwards;
+  animation: FadeIn 0.5s linear 0s forwards;
 }
 
 .loaded .page-section * {
