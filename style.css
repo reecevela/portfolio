@@ -165,7 +165,7 @@ body {
 
 header.nav-wrapper {
   z-index: 999;
-  position: fixed;
+  position: absolute;
   width: 100%;
   top: 0;
   left: 0;
@@ -227,11 +227,18 @@ strong {
 }
 
 a:hover::before {
-  content: "<";
+  content: "< ";
+  position:absolute;
+  transform: translateX(-0.6rem);
 }
 
 a:hover::after {
-  content: ">";
+  content: " >";
+  position:absolute;
+}
+
+a.no-symbol:hover::after, a.no-symbol:hover::before {
+  content: "";
 }
 
 .hidden-message {
@@ -245,6 +252,9 @@ a:hover::after {
   justify-content: center;
 }
 
+ul ul {
+  list-style-type: '- ';
+}
 
 /*------------------------------------- TRANSITIONS ---------------------------------*/
 
@@ -294,4 +304,12 @@ a:hover::after {
 
 .loaded .hidden-message:hover {
   animation: FadeIn 0.5s linear 0s forwards;
+}
+
+.no-animation.page-section {
+  animation: slideRightFadeIn 0s linear 0s forwards;
+}
+
+.no-animation:not(.page-section) {
+  animation: FadeIn 0s linear 0s forwards;
 }
