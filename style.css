@@ -69,11 +69,10 @@ body {
   margin: 15vh 0;
   text-align: left;
   max-width: 80%;
-  border-radius: 0;
 }
 
 .page-section p {
-  max-width: 300px;
+  max-width: 500px;
 }
 
 .page-section * {
@@ -84,9 +83,36 @@ body {
   text-align: left;
 }
 
+.gallery {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+
+.carousel {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.card {
+  max-width: 250px;
+  margin: 8px 32px;
+}
+
+.card a {
+  margin: 2px;
+  padding: 4px;
+  background-color: var(--bg-light);
+  border-radius: 2px;
+}
+
 /*--------------------------SPECIAL WRAPPERS SECTION----------------------------*/
 
-.center-wrapper ul {
+.center-wrapper * {
   display: flex;
   flex-flow: row wrap;
   list-style-type: none;
@@ -107,6 +133,12 @@ body {
   justify-self: flex-end;
   background-color: var(--bg-opp);
   color: var(--txt-opp);
+}
+
+.page-footer a {
+  color: var(--txt-opp);
+  margin-top: 8px;
+
 }
 
 
@@ -137,14 +169,14 @@ nav ul {
   width: min(600px, 80%);
 }
 
-nav a {
+nav a, .card a {
   text-decoration: none;
   color: var(--txt-main);
   padding: 4px 16px;
   border-radius: 2px;
 }
 
-nav a:hover {
+nav a:hover, .card a {
   color: var(--txt-em);
 }
 
@@ -182,6 +214,19 @@ a:hover::before {
 a:hover::after {
   content: ">";
 }
+
+.hidden-message {
+  height: 30vh;
+  width: 100%;
+  margin: -15vh 0;
+  opacity: 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
 /*------------------------------------- TRANSITIONS ---------------------------------*/
 
 @keyframes slideRightFadeIn {
@@ -204,6 +249,12 @@ a:hover::after {
   }
 }
 
+@keyFrames FadeOut {
+  100% {
+    opacity: 0;
+  }
+}
+
 
 
 .loaded .page-section {
@@ -220,4 +271,9 @@ a:hover::after {
 
 .loaded .page-section * {
   animation: FadeIn 1s linear 1s forwards;
+}
+
+
+.loaded .hidden-message:hover {
+  animation: FadeIn 0.5s linear 0s forwards;
 }
