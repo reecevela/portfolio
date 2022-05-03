@@ -100,6 +100,9 @@ body {
 .card {
   max-width: 250px;
   margin: 8px 32px;
+  box-shadow:  6px 6px 3px rgba(0,0,0,.2);
+  border-radius: 8px;
+  padding: 16px;
 }
 
 .card a {
@@ -147,6 +150,7 @@ body {
 .page-footer * ul {
   list-style: none;
   display: flex;
+  flex-flow: row wrap;
   justify-content: space-around;
   align-items: center;
   padding: 0;
