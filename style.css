@@ -126,10 +126,15 @@ body {
   border-radius: 2px;
 }
 
+.left-wrapper {
+  text-align: left;
+}
+
 
 /*--------------------------------------FOOTER SECTION----------------------------------*/
 
 .page-footer {
+  padding: 8px;
   justify-self: flex-end;
   background-color: var(--bg-opp);
   color: var(--txt-opp);
@@ -138,9 +143,23 @@ body {
 .page-footer a {
   color: var(--txt-opp);
   margin-top: 8px;
-
 }
 
+.page-footer * ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+}
+
+.page-footer * ul li {
+  padding: 0;
+  margin: 8px min(32px, 5vw);
+}
+
+.page-footer * ul li a {
+  padding: 8px;
+}
 
 /*----------------------------------------- HEADER SECTION -------------------------*/
 
@@ -265,14 +284,13 @@ a:hover::after {
   animation: FadeIn 2s linear 3s forwards;
 }
 
-.loaded .page-section .fast-entry {
-  animation: FadeIn 0.5s linear 0s forwards;
-}
-
 .loaded .page-section * {
   animation: FadeIn 1s linear 1s forwards;
 }
 
+.loaded .page-section .fast-entry {
+  animation: FadeIn 0.5s linear 0s forwards;
+}
 
 .loaded .hidden-message:hover {
   animation: FadeIn 0.5s linear 0s forwards;
