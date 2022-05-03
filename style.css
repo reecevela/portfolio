@@ -260,6 +260,21 @@ ul ul {
   list-style-type: '- ';
 }
 
+button {
+  font-size: 24px;
+  font-weight: bold;
+  padding: 8px;
+  border: 4px solid var(--bg-opp);
+  border-radius: 16px;
+  color: var(--txt-main);
+  background: linear-gradient(275deg, rgba(248,252,81,1) 0%, rgba(248,252,81,1) 10%,
+  rgba(0,177,255,1) 35%, rgba(209,87,222,1) 90%, rgba(209,87,222,1) 100%);
+}
+
+button:hover {
+  color: var(--txt-opp);
+}
+
 /*------------------------------------- TRANSITIONS ---------------------------------*/
 
 @keyframes slideRightFadeIn {
@@ -299,12 +314,14 @@ ul ul {
 }
 
 .loaded .page-section * {
-  animation: FadeIn 1s linear 1s forwards;
+  animation: FadeIn 0.5s linear 0.2s forwards;
 }
 
 .loaded .page-section .fast-entry {
   animation: FadeIn 0.5s linear 0s forwards;
 }
+
+
 
 .loaded .hidden-message:hover {
   animation: FadeIn 0.5s linear 0s forwards;

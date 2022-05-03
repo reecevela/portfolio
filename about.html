@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About Reece Vela</title>
   <link rel="stylesheet" href="./style.css">
+  <script src="./about.js" defer></script>
 </head>
 <body class="body loaded" style="overflow-x: scroll!important;">
   <header class="nav-wrapper" id="top">
@@ -34,45 +35,51 @@
     <hr>
     <div class="left-wrapper">
       <h2>Production Lead</h2>
-      <h3>CDS Global - Mailing Services - Wilton, IA</h3>
-      <p>My role here was to direct a small team of printer operators by training and working alongside employees while also fixing various machines and equipment. In this role, I exercised problem-solving skills to keep machines running and communication to lead an effective team.</p>
-      <h4>Responsibilities:</h4>
-      <ul>
-        <li>Train new employees</li>
-        <li>Conduct quality checks</li>
-        <li>Cross-train and Develop other employees’ skills</li>
-        <li>Delegate work to operators efficiently</li>
-        <li>Provide feedback and improvements to flow of production</li>
-        <li>Maintain high uptime for machinery</li>
-        <li>Guide goal-setting and Communicate to department employees</li>
-        <li>Examine production reports for aberrations</li>
-        <li>Coach employees on their strengths and areas for improvement</li>
-      </ul>
+      <h3>CDS Global - Mailing Services - Wilton, IA<span id="cds-dots">...</span></h3>
+      <div id="cds-more" style="display: none;" class="fast-entry">
+        <p>My role here was to direct a small team of printer operators by training and working alongside employees while also fixing various machines and equipment. In this role, I exercised problem-solving skills to keep machines running and communication to lead an effective team.</p>
+        <h4>Responsibilities:</h4>
+        <ul>
+          <li>Train new employees</li>
+          <li>Conduct quality checks</li>
+          <li>Cross-train and Develop other employees’ skills</li>
+          <li>Delegate work to operators efficiently</li>
+          <li>Provide feedback and improvements to flow of production</li>
+          <li>Maintain high uptime for machinery</li>
+          <li>Guide goal-setting and Communicate to department employees</li>
+          <li>Examine production reports for aberrations</li>
+          <li>Coach employees on their strengths and areas for improvement</li>
+        </ul>
+      </div>
+      <button onclick="cdsToggle()" id="cdsBtn">Read more</button>
     </div>
     <div class="left-wrapper">
       <h2>Assistant General Manager</h2>
-      <h3>Taco Bell - Border Foods - Muscatine, IA</h3>
-      <p>Here I co-managed an entire store, training managers and employees alike while deciding who to hire and relentlessly improving the store's efficiency and developing the team. This all led to being awarded the Most Improved Store in the franchise of 200+ locations.</p>
-      <h4>Responsibilities:</h4>
-      <ul>
-        <li>Train managers to be effective leaders through 1-on-1 meetings</li>
-        <li>Hire new employees and perform interviews</li>
-        <li>Communicate team and personal performance</li>
-        <li>De-escalate conflicts</li>
-        <li>Create weekly schedules for 25+ employees across three shifts</li>
-        <li>Ensure proper cash handling and safe policy</li>
-        <li>Manage store wide inventory and ordering</li>
-        <li>Organize transfers between locations to help multiple stores stay supplied</li>
-      </ul>
-      <h4>Scope:</h4>
-      <ul>
-        <li>Cross-trained in Bettendorf, IA location</li>
+      <h3>Taco Bell - Border Foods - Muscatine, IA<span id="agm-dots">...</span></h3>
+      <div id="agm-more" style="display: none;" class="fast-entry">
+        <p>Here I co-managed an entire store, training managers and employees alike while deciding who to hire and relentlessly improving the store's efficiency and developing the team. This all led to being awarded the Most Improved Store in the franchise of 200+ locations.</p>
+        <h4>Responsibilities:</h4>
         <ul>
-          <li>Then supported both locations during a transition of leadership</li>
+          <li>Train managers to be effective leaders through 1-on-1 meetings</li>
+          <li>Hire new employees and perform interviews</li>
+          <li>Communicate team and personal performance</li>
+          <li>De-escalate conflicts</li>
+          <li>Create weekly schedules for 25+ employees across three shifts</li>
+          <li>Ensure proper cash handling and safe policy</li>
+          <li>Manage store wide inventory and ordering</li>
+          <li>Organize transfers between locations to help multiple stores stay supplied</li>
         </ul>
-        <li>Managed 25+ employees at Muscatine location</li>
-        <li>Participated in Region-level conferences and meetings</li>
-      </ul>
+        <h4>Scope:</h4>
+        <ul>
+          <li>Cross-trained in Bettendorf, IA location</li>
+          <ul>
+            <li>Then supported both locations during a transition of leadership</li>
+          </ul>
+          <li>Managed 25+ employees at Muscatine location</li>
+          <li>Participated in Region-level conferences and meetings</li>
+        </ul>
+      </div>
+      <button onclick="agmToggle()" id="agmBtn">Read more</button>
     </div>
   </div>
   <div class="page-section stretch" id="achievements">
