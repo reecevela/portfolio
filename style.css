@@ -275,6 +275,12 @@ button:hover {
   color: var(--txt-opp);
 }
 
+.gallery.card a:hover {
+  background: rgb(0,177,255);
+background: radial-gradient(circle, rgba(0,177,255,1) 35%, rgba(209,87,222,1) 100%);
+  color: var(--txt-opp);
+}
+
 /*------------------------------------- TRANSITIONS ---------------------------------*/
 
 @keyframes slideRightFadeIn {
@@ -320,8 +326,6 @@ button:hover {
 .loaded .page-section .fast-entry {
   animation: FadeIn 0.5s linear 0s forwards;
 }
-
-
 
 .loaded .hidden-message:hover {
   animation: FadeIn 0.5s linear 0s forwards;
