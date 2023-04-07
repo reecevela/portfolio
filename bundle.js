@@ -2,10 +2,10 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./node_modules/css-loader/dist/cjs.js!./src/styles.css":
-/*!**************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./src/styles.css ***!
-  \**************************************************************/
+/***/ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/resolve-url-loader/index.js!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[3]!./src/styles.css":
+/*!********************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/resolve-url-loader/index.js!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[3]!./src/styles.css ***!
+  \********************************************************************************************************************************************************************************************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -16,17 +16,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 /* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/getUrl.js */ "./node_modules/css-loader/dist/runtime/getUrl.js");
-/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__);
 // Imports
 
 
-
-var ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(/*! ./images/hero-bkg.jpg */ "./src/images/hero-bkg.jpg"), __webpack_require__.b);
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
-var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_0___);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ":root {\r\n    --blend-color: #484668;\r\n    --accent-color: #ffddcc;\r\n}\r\n\r\nhtml {\r\n    scroll-behavior: smooth;\r\n}\r\n\r\n* {\r\n    margin: 0;\r\n    padding: 0;\r\n    box-sizing: border-box;\r\n}\r\n\r\nbody {\r\n    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';\r\n    line-height: 1.6;\r\n    background-color: #fff;\r\n    color: #222;\r\n}\r\n\r\nnav {\r\n    position: relative;\r\n    width: 100%;\r\n    display: flex;\r\n    justify-content: space-between;\r\n    padding: 1rem 2rem;\r\n    background-color: #fff;\r\n    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);\r\n} \r\n\r\n.nav-container {\r\n    display: flex;\r\n    align-items: center;\r\n    justify-content: space-between;\r\n    width: 100%;\r\n    max-width: 1200px;\r\n}\r\n\r\n.logo {\r\n    font-size: 1.5rem;\r\n    font-weight: bold;\r\n    color: #222;\r\n    text-decoration: none;\r\n}\r\n\r\n.nav-menu {\r\n    display: flex;\r\n    list-style: none;\r\n}\r\n\r\n.nav-menu li {\r\n    margin-left: 1.5rem;\r\n}\r\n\r\n.nav-menu a {\r\n    color: #222;\r\n    text-decoration: none;\r\n    transition: color 0.3s;\r\n}\r\n\r\n.nav-menu a:hover {\r\n    color: var(--accent-color);\r\n}\r\n\r\n.hamburger {\r\n    display: none;\r\n    flex-direction: column;\r\n    justify-content: space-around;\r\n    width: 24px;\r\n    height: 18px;\r\n}\r\n\r\n.hamburger span {\r\n    display: block;\r\n    width: 100%;\r\n    height: 2px;\r\n    background-color: #222;\r\n    transition: all 0.3s;\r\n}\r\n\r\n.nav-menu.show {\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    position: absolute;\r\n    top: 100%;\r\n    left: 0;\r\n    width: 100%;\r\n    background-color: #fff;\r\n    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);\r\n    z-index: 10;\r\n}\r\n\r\n.nav-menu.show li {\r\n    margin: 1rem 0;\r\n}\r\n\r\n.hero {\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    justify-content: center;\r\n    min-height: 100vh;\r\n    background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),\r\n        url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");\r\n    background-position: center;\r\n    background-size: cover;\r\n    background-repeat: no-repeat;\r\n    background-color: #fff;\r\n}\r\n\r\n.blend {\r\n    mix-blend-mode: exclusion;\r\n    color: var(--blend-color);\r\n}\r\n\r\n.circle-image-wrapper {\r\n    height: 320px;\r\n    width: 320px;\r\n    border-radius: 100%;\r\n    background-color: var(--blend-color);\r\n    mix-blend-mode: exclusion;\r\n    margin-bottom: 1rem;\r\n    margin-top: 2rem;\r\n}\r\n  \r\n.hero h1 {\r\n    font-size: 5rem;\r\n    margin-bottom: 1rem;\r\n}\r\n\r\n.hero h2 {\r\n    font-size: 2rem;\r\n    margin-bottom: 1rem;\r\n}\r\n\r\n.chevron {\r\n    animation: moveUpDown 2s ease-in-out infinite;\r\n}\r\n\r\n.about {\r\n    padding: 2rem;\r\n    opacity: 0;\r\n}\r\n\r\n.about.visible {\r\n    animation: slideInLeft 1s ease-out forwards;\r\n}\r\n  \r\n\r\n.about-content {\r\n    max-width: 800px;\r\n    margin: 0 auto;\r\n}\r\n\r\n.about-content h2 {\r\n    font-size: 2rem;\r\n    margin-bottom: 1rem;\r\n}\r\n\r\n.about-content p {\r\n    font-size: 1.1rem;\r\n    line-height: 1.5;\r\n    margin-bottom: 1rem;\r\n}\r\n  \r\n.projects {\r\n    padding: 2rem;\r\n}\r\n\r\n.featured {\r\n    display: flex;\r\n    flex-direction: row;\r\n    justify-content: space-between;\r\n    width: 100%;\r\n    margin-bottom: 2rem;\r\n}\r\n\r\n.other-projects {\r\n    display: grid;\r\n    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));\r\n    gap: 1rem;\r\n}\r\n\r\n.skills {\r\n    display: grid;\r\n    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));\r\n    gap: 1rem;\r\n    padding: 2rem;\r\n}\r\n\r\n.contact {\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    padding: 2rem;\r\n}\r\n\r\n.back-to-top {\r\n    display: none;\r\n    position: fixed;\r\n    bottom: 20px;\r\n    right: 20px;\r\n    background-color: #73d4fe;\r\n    color: #ffffff;\r\n    border: none;\r\n    padding: 10px 20px;\r\n    font-size: 14px;\r\n    cursor: pointer;\r\n    border-radius: 4px;\r\n    z-index: 100;\r\n}\r\n\r\n.back-to-top.visible {\r\n    display: block;\r\n}\r\n\r\n@media (max-width: 768px) {\r\n    .nav-menu {\r\n        display: none;\r\n    }\r\n  \r\n    .hamburger {\r\n        display: flex;\r\n    }\r\n}\r\n\r\n@keyframes slideInLeft {\r\n    from {\r\n        transform: translateX(-100%);\r\n        opacity: 0;\r\n    }\r\n    to {\r\n        transform: translateX(0);\r\n        opacity: 1;\r\n    }\r\n}\r\n\r\n@keyframes moveUpDown {\r\n    0%, 100% {\r\n        transform: translateY(0);\r\n    }\r\n    50% {\r\n        transform: translateY(-10px);\r\n    }\r\n  }", "",{"version":3,"sources":["webpack://./src/styles.css"],"names":[],"mappings":"AAAA;IACI,sBAAsB;IACtB,uBAAuB;AAC3B;;AAEA;IACI,uBAAuB;AAC3B;;AAEA;IACI,SAAS;IACT,UAAU;IACV,sBAAsB;AAC1B;;AAEA;IACI,0JAA0J;IAC1J,gBAAgB;IAChB,sBAAsB;IACtB,WAAW;AACf;;AAEA;IACI,kBAAkB;IAClB,WAAW;IACX,aAAa;IACb,8BAA8B;IAC9B,kBAAkB;IAClB,sBAAsB;IACtB,wCAAwC;AAC5C;;AAEA;IACI,aAAa;IACb,mBAAmB;IACnB,8BAA8B;IAC9B,WAAW;IACX,iBAAiB;AACrB;;AAEA;IACI,iBAAiB;IACjB,iBAAiB;IACjB,WAAW;IACX,qBAAqB;AACzB;;AAEA;IACI,aAAa;IACb,gBAAgB;AACpB;;AAEA;IACI,mBAAmB;AACvB;;AAEA;IACI,WAAW;IACX,qBAAqB;IACrB,sBAAsB;AAC1B;;AAEA;IACI,0BAA0B;AAC9B;;AAEA;IACI,aAAa;IACb,sBAAsB;IACtB,6BAA6B;IAC7B,WAAW;IACX,YAAY;AAChB;;AAEA;IACI,cAAc;IACd,WAAW;IACX,WAAW;IACX,sBAAsB;IACtB,oBAAoB;AACxB;;AAEA;IACI,aAAa;IACb,sBAAsB;IACtB,mBAAmB;IACnB,kBAAkB;IAClB,SAAS;IACT,OAAO;IACP,WAAW;IACX,sBAAsB;IACtB,wCAAwC;IACxC,WAAW;AACf;;AAEA;IACI,cAAc;AAClB;;AAEA;IACI,aAAa;IACb,sBAAsB;IACtB,mBAAmB;IACnB,uBAAuB;IACvB,iBAAiB;IACjB;+CACgC;IAChC,2BAA2B;IAC3B,sBAAsB;IACtB,4BAA4B;IAC5B,sBAAsB;AAC1B;;AAEA;IACI,yBAAyB;IACzB,yBAAyB;AAC7B;;AAEA;IACI,aAAa;IACb,YAAY;IACZ,mBAAmB;IACnB,oCAAoC;IACpC,yBAAyB;IACzB,mBAAmB;IACnB,gBAAgB;AACpB;;AAEA;IACI,eAAe;IACf,mBAAmB;AACvB;;AAEA;IACI,eAAe;IACf,mBAAmB;AACvB;;AAEA;IACI,6CAA6C;AACjD;;AAEA;IACI,aAAa;IACb,UAAU;AACd;;AAEA;IACI,2CAA2C;AAC/C;;;AAGA;IACI,gBAAgB;IAChB,cAAc;AAClB;;AAEA;IACI,eAAe;IACf,mBAAmB;AACvB;;AAEA;IACI,iBAAiB;IACjB,gBAAgB;IAChB,mBAAmB;AACvB;;AAEA;IACI,aAAa;AACjB;;AAEA;IACI,aAAa;IACb,mBAAmB;IACnB,8BAA8B;IAC9B,WAAW;IACX,mBAAmB;AACvB;;AAEA;IACI,aAAa;IACb,2DAA2D;IAC3D,SAAS;AACb;;AAEA;IACI,aAAa;IACb,2DAA2D;IAC3D,SAAS;IACT,aAAa;AACjB;;AAEA;IACI,aAAa;IACb,sBAAsB;IACtB,mBAAmB;IACnB,aAAa;AACjB;;AAEA;IACI,aAAa;IACb,eAAe;IACf,YAAY;IACZ,WAAW;IACX,yBAAyB;IACzB,cAAc;IACd,YAAY;IACZ,kBAAkB;IAClB,eAAe;IACf,eAAe;IACf,kBAAkB;IAClB,YAAY;AAChB;;AAEA;IACI,cAAc;AAClB;;AAEA;IACI;QACI,aAAa;IACjB;;IAEA;QACI,aAAa;IACjB;AACJ;;AAEA;IACI;QACI,4BAA4B;QAC5B,UAAU;IACd;IACA;QACI,wBAAwB;QACxB,UAAU;IACd;AACJ;;AAEA;IACI;QACI,wBAAwB;IAC5B;IACA;QACI,4BAA4B;IAChC;EACF","sourcesContent":[":root {\r\n    --blend-color: #484668;\r\n    --accent-color: #ffddcc;\r\n}\r\n\r\nhtml {\r\n    scroll-behavior: smooth;\r\n}\r\n\r\n* {\r\n    margin: 0;\r\n    padding: 0;\r\n    box-sizing: border-box;\r\n}\r\n\r\nbody {\r\n    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';\r\n    line-height: 1.6;\r\n    background-color: #fff;\r\n    color: #222;\r\n}\r\n\r\nnav {\r\n    position: relative;\r\n    width: 100%;\r\n    display: flex;\r\n    justify-content: space-between;\r\n    padding: 1rem 2rem;\r\n    background-color: #fff;\r\n    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);\r\n} \r\n\r\n.nav-container {\r\n    display: flex;\r\n    align-items: center;\r\n    justify-content: space-between;\r\n    width: 100%;\r\n    max-width: 1200px;\r\n}\r\n\r\n.logo {\r\n    font-size: 1.5rem;\r\n    font-weight: bold;\r\n    color: #222;\r\n    text-decoration: none;\r\n}\r\n\r\n.nav-menu {\r\n    display: flex;\r\n    list-style: none;\r\n}\r\n\r\n.nav-menu li {\r\n    margin-left: 1.5rem;\r\n}\r\n\r\n.nav-menu a {\r\n    color: #222;\r\n    text-decoration: none;\r\n    transition: color 0.3s;\r\n}\r\n\r\n.nav-menu a:hover {\r\n    color: var(--accent-color);\r\n}\r\n\r\n.hamburger {\r\n    display: none;\r\n    flex-direction: column;\r\n    justify-content: space-around;\r\n    width: 24px;\r\n    height: 18px;\r\n}\r\n\r\n.hamburger span {\r\n    display: block;\r\n    width: 100%;\r\n    height: 2px;\r\n    background-color: #222;\r\n    transition: all 0.3s;\r\n}\r\n\r\n.nav-menu.show {\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    position: absolute;\r\n    top: 100%;\r\n    left: 0;\r\n    width: 100%;\r\n    background-color: #fff;\r\n    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);\r\n    z-index: 10;\r\n}\r\n\r\n.nav-menu.show li {\r\n    margin: 1rem 0;\r\n}\r\n\r\n.hero {\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    justify-content: center;\r\n    min-height: 100vh;\r\n    background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),\r\n        url('./images/hero-bkg.jpg');\r\n    background-position: center;\r\n    background-size: cover;\r\n    background-repeat: no-repeat;\r\n    background-color: #fff;\r\n}\r\n\r\n.blend {\r\n    mix-blend-mode: exclusion;\r\n    color: var(--blend-color);\r\n}\r\n\r\n.circle-image-wrapper {\r\n    height: 320px;\r\n    width: 320px;\r\n    border-radius: 100%;\r\n    background-color: var(--blend-color);\r\n    mix-blend-mode: exclusion;\r\n    margin-bottom: 1rem;\r\n    margin-top: 2rem;\r\n}\r\n  \r\n.hero h1 {\r\n    font-size: 5rem;\r\n    margin-bottom: 1rem;\r\n}\r\n\r\n.hero h2 {\r\n    font-size: 2rem;\r\n    margin-bottom: 1rem;\r\n}\r\n\r\n.chevron {\r\n    animation: moveUpDown 2s ease-in-out infinite;\r\n}\r\n\r\n.about {\r\n    padding: 2rem;\r\n    opacity: 0;\r\n}\r\n\r\n.about.visible {\r\n    animation: slideInLeft 1s ease-out forwards;\r\n}\r\n  \r\n\r\n.about-content {\r\n    max-width: 800px;\r\n    margin: 0 auto;\r\n}\r\n\r\n.about-content h2 {\r\n    font-size: 2rem;\r\n    margin-bottom: 1rem;\r\n}\r\n\r\n.about-content p {\r\n    font-size: 1.1rem;\r\n    line-height: 1.5;\r\n    margin-bottom: 1rem;\r\n}\r\n  \r\n.projects {\r\n    padding: 2rem;\r\n}\r\n\r\n.featured {\r\n    display: flex;\r\n    flex-direction: row;\r\n    justify-content: space-between;\r\n    width: 100%;\r\n    margin-bottom: 2rem;\r\n}\r\n\r\n.other-projects {\r\n    display: grid;\r\n    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));\r\n    gap: 1rem;\r\n}\r\n\r\n.skills {\r\n    display: grid;\r\n    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));\r\n    gap: 1rem;\r\n    padding: 2rem;\r\n}\r\n\r\n.contact {\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    padding: 2rem;\r\n}\r\n\r\n.back-to-top {\r\n    display: none;\r\n    position: fixed;\r\n    bottom: 20px;\r\n    right: 20px;\r\n    background-color: #73d4fe;\r\n    color: #ffffff;\r\n    border: none;\r\n    padding: 10px 20px;\r\n    font-size: 14px;\r\n    cursor: pointer;\r\n    border-radius: 4px;\r\n    z-index: 100;\r\n}\r\n\r\n.back-to-top.visible {\r\n    display: block;\r\n}\r\n\r\n@media (max-width: 768px) {\r\n    .nav-menu {\r\n        display: none;\r\n    }\r\n  \r\n    .hamburger {\r\n        display: flex;\r\n    }\r\n}\r\n\r\n@keyframes slideInLeft {\r\n    from {\r\n        transform: translateX(-100%);\r\n        opacity: 0;\r\n    }\r\n    to {\r\n        transform: translateX(0);\r\n        opacity: 1;\r\n    }\r\n}\r\n\r\n@keyframes moveUpDown {\r\n    0%, 100% {\r\n        transform: translateY(0);\r\n    }\r\n    50% {\r\n        transform: translateY(-10px);\r\n    }\r\n  }"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, ":root {\n  --blend-color: #484668;\n  --accent-color: #ffddcc;\n}\n\nhtml {\n  scroll-behavior: smooth;\n}\n\n* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n}\n\nbody {\n  font-family: -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\";\n  line-height: 1.6;\n  background-color: #fff;\n  color: #222;\n}\n\nnav {\n  position: relative;\n  width: 100%;\n  display: flex;\n  justify-content: space-between;\n  padding: 1rem 2rem;\n  background-color: #fff;\n  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);\n}\n\n.nav-container {\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  width: 100%;\n  max-width: 1200px;\n}\n\n.logo {\n  font-size: 1.5rem;\n  font-weight: bold;\n  color: #222;\n  text-decoration: none;\n}\n\n.nav-menu {\n  display: flex;\n  list-style: none;\n}\n\n.nav-menu li {\n  margin-left: 1.5rem;\n}\n\n.nav-menu a {\n  color: #222;\n  text-decoration: none;\n  transition: color 0.3s;\n}\n\n.nav-menu a:hover {\n  color: var(--accent-color);\n}\n\n.hamburger {\n  display: none;\n  flex-direction: column;\n  justify-content: space-around;\n  width: 24px;\n  height: 18px;\n}\n\n.hamburger span {\n  display: block;\n  width: 100%;\n  height: 2px;\n  background-color: #222;\n  transition: all 0.3s;\n}\n\n.nav-menu.show {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  position: absolute;\n  top: 100%;\n  left: 0;\n  width: 100%;\n  background-color: #fff;\n  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);\n  z-index: 10;\n}\n\n.nav-menu.show li {\n  margin: 1rem 0;\n}\n\n.hero {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center;\n  min-height: 100vh;\n  background-position: center;\n  background-size: cover;\n  background-repeat: no-repeat;\n  background-color: #fff;\n}\n\n.blend {\n  mix-blend-mode: exclusion;\n  color: var(--blend-color);\n}\n\n.circle-image-wrapper {\n  height: 320px;\n  width: 320px;\n  border-radius: 100%;\n  background-color: var(--blend-color);\n  mix-blend-mode: exclusion;\n  margin-bottom: 1rem;\n  margin-top: 2rem;\n  overflow: hidden;\n}\n\n.hero h1 {\n  font-size: 5rem;\n  margin-bottom: 1rem;\n}\n\n.hero h2 {\n  font-size: 2rem;\n  margin-bottom: 1rem;\n}\n\n.chevron {\n  animation: moveUpDown 2s ease-in-out infinite;\n}\n\n.about {\n  padding: 2rem;\n  opacity: 0;\n}\n\n.about.visible {\n  animation: slideInLeft 1s ease-out forwards;\n}\n\n.about-content {\n  max-width: 800px;\n  margin: 0 auto;\n}\n\n.about-content h2 {\n  font-size: 2rem;\n  margin-bottom: 1rem;\n}\n\n.about-content p {\n  font-size: 1.1rem;\n  line-height: 1.5;\n  margin-bottom: 1rem;\n}\n\n.projects {\n  padding: 2rem;\n}\n\n.featured {\n  display: flex;\n  flex-direction: row;\n  justify-content: space-between;\n  width: 100%;\n  margin-bottom: 2rem;\n}\n\n.other-projects {\n  display: grid;\n  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));\n  gap: 1rem;\n}\n\n.skills {\n  display: grid;\n  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));\n  gap: 1rem;\n  padding: 2rem;\n}\n\n.contact {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  padding: 2rem;\n}\n\n.back-to-top {\n  display: none;\n  position: fixed;\n  bottom: 20px;\n  right: 20px;\n  background-color: #73d4fe;\n  color: #ffffff;\n  border: none;\n  padding: 10px 20px;\n  font-size: 14px;\n  cursor: pointer;\n  border-radius: 4px;\n  z-index: 100;\n}\n\n.back-to-top.visible {\n  display: block;\n}\n\n@media (max-width: 768px) {\n  .nav-menu {\n    display: none;\n  }\n  .hamburger {\n    display: flex;\n  }\n}\n@keyframes slideInLeft {\n  from {\n    transform: translateX(-100%);\n    opacity: 0;\n  }\n  to {\n    transform: translateX(0);\n    opacity: 1;\n  }\n}\n@keyframes moveUpDown {\n  0%, 100% {\n    transform: translateY(0);\n  }\n  50% {\n    transform: translateY(-10px);\n  }\n}", "",{"version":3,"sources":["webpack://./src/styles.css"],"names":[],"mappings":"AAAA;EACI,sBAAA;EACA,uBAAA;AACJ;;AAEA;EACI,uBAAA;AACJ;;AAEA;EACI,SAAA;EACA,UAAA;EACA,sBAAA;AACJ;;AAEA;EACI,0JAAA;EACA,gBAAA;EACA,sBAAA;EACA,WAAA;AACJ;;AAEA;EACI,kBAAA;EACA,WAAA;EACA,aAAA;EACA,8BAAA;EACA,kBAAA;EACA,sBAAA;EACA,wCAAA;AACJ;;AAEA;EACI,aAAA;EACA,mBAAA;EACA,8BAAA;EACA,WAAA;EACA,iBAAA;AACJ;;AAEA;EACI,iBAAA;EACA,iBAAA;EACA,WAAA;EACA,qBAAA;AACJ;;AAEA;EACI,aAAA;EACA,gBAAA;AACJ;;AAEA;EACI,mBAAA;AACJ;;AAEA;EACI,WAAA;EACA,qBAAA;EACA,sBAAA;AACJ;;AAEA;EACI,0BAAA;AACJ;;AAEA;EACI,aAAA;EACA,sBAAA;EACA,6BAAA;EACA,WAAA;EACA,YAAA;AACJ;;AAEA;EACI,cAAA;EACA,WAAA;EACA,WAAA;EACA,sBAAA;EACA,oBAAA;AACJ;;AAEA;EACI,aAAA;EACA,sBAAA;EACA,mBAAA;EACA,kBAAA;EACA,SAAA;EACA,OAAA;EACA,WAAA;EACA,sBAAA;EACA,wCAAA;EACA,WAAA;AACJ;;AAEA;EACI,cAAA;AACJ;;AAEA;EACI,aAAA;EACA,sBAAA;EACA,mBAAA;EACA,uBAAA;EACA,iBAAA;EACA,2BAAA;EACA,sBAAA;EACA,4BAAA;EACA,sBAAA;AACJ;;AAEA;EACI,yBAAA;EACA,yBAAA;AACJ;;AAEA;EACI,aAAA;EACA,YAAA;EACA,mBAAA;EACA,oCAAA;EACA,yBAAA;EACA,mBAAA;EACA,gBAAA;EACA,gBAAA;AACJ;;AAEA;EACI,eAAA;EACA,mBAAA;AACJ;;AAEA;EACI,eAAA;EACA,mBAAA;AACJ;;AAEA;EACI,6CAAA;AACJ;;AAEA;EACI,aAAA;EACA,UAAA;AACJ;;AAEA;EACI,2CAAA;AACJ;;AAGA;EACI,gBAAA;EACA,cAAA;AAAJ;;AAGA;EACI,eAAA;EACA,mBAAA;AAAJ;;AAGA;EACI,iBAAA;EACA,gBAAA;EACA,mBAAA;AAAJ;;AAGA;EACI,aAAA;AAAJ;;AAGA;EACI,aAAA;EACA,mBAAA;EACA,8BAAA;EACA,WAAA;EACA,mBAAA;AAAJ;;AAGA;EACI,aAAA;EACA,2DAAA;EACA,SAAA;AAAJ;;AAGA;EACI,aAAA;EACA,2DAAA;EACA,SAAA;EACA,aAAA;AAAJ;;AAGA;EACI,aAAA;EACA,sBAAA;EACA,mBAAA;EACA,aAAA;AAAJ;;AAGA;EACI,aAAA;EACA,eAAA;EACA,YAAA;EACA,WAAA;EACA,yBAAA;EACA,cAAA;EACA,YAAA;EACA,kBAAA;EACA,eAAA;EACA,eAAA;EACA,kBAAA;EACA,YAAA;AAAJ;;AAGA;EACI,cAAA;AAAJ;;AAGA;EACI;IACI,aAAA;EAAN;EAGE;IACI,aAAA;EADN;AACF;AAIA;EACI;IACI,4BAAA;IACA,UAAA;EAFN;EAIE;IACI,wBAAA;IACA,UAAA;EAFN;AACF;AAKA;EACI;IACI,wBAAA;EAHN;EAKE;IACI,4BAAA;EAHN;AACF","sourcesContent":[":root {\r\n    --blend-color: #484668;\r\n    --accent-color: #ffddcc;\r\n}\r\n\r\nhtml {\r\n    scroll-behavior: smooth;\r\n}\r\n\r\n* {\r\n    margin: 0;\r\n    padding: 0;\r\n    box-sizing: border-box;\r\n}\r\n\r\nbody {\r\n    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';\r\n    line-height: 1.6;\r\n    background-color: #fff;\r\n    color: #222;\r\n}\r\n\r\nnav {\r\n    position: relative;\r\n    width: 100%;\r\n    display: flex;\r\n    justify-content: space-between;\r\n    padding: 1rem 2rem;\r\n    background-color: #fff;\r\n    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);\r\n} \r\n\r\n.nav-container {\r\n    display: flex;\r\n    align-items: center;\r\n    justify-content: space-between;\r\n    width: 100%;\r\n    max-width: 1200px;\r\n}\r\n\r\n.logo {\r\n    font-size: 1.5rem;\r\n    font-weight: bold;\r\n    color: #222;\r\n    text-decoration: none;\r\n}\r\n\r\n.nav-menu {\r\n    display: flex;\r\n    list-style: none;\r\n}\r\n\r\n.nav-menu li {\r\n    margin-left: 1.5rem;\r\n}\r\n\r\n.nav-menu a {\r\n    color: #222;\r\n    text-decoration: none;\r\n    transition: color 0.3s;\r\n}\r\n\r\n.nav-menu a:hover {\r\n    color: var(--accent-color);\r\n}\r\n\r\n.hamburger {\r\n    display: none;\r\n    flex-direction: column;\r\n    justify-content: space-around;\r\n    width: 24px;\r\n    height: 18px;\r\n}\r\n\r\n.hamburger span {\r\n    display: block;\r\n    width: 100%;\r\n    height: 2px;\r\n    background-color: #222;\r\n    transition: all 0.3s;\r\n}\r\n\r\n.nav-menu.show {\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    position: absolute;\r\n    top: 100%;\r\n    left: 0;\r\n    width: 100%;\r\n    background-color: #fff;\r\n    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);\r\n    z-index: 10;\r\n}\r\n\r\n.nav-menu.show li {\r\n    margin: 1rem 0;\r\n}\r\n\r\n.hero {\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    justify-content: center;\r\n    min-height: 100vh;\r\n    background-position: center;\r\n    background-size: cover;\r\n    background-repeat: no-repeat;\r\n    background-color: #fff;\r\n}\r\n\r\n.blend {\r\n    mix-blend-mode: exclusion;\r\n    color: var(--blend-color);\r\n}\r\n\r\n.circle-image-wrapper {\r\n    height: 320px;\r\n    width: 320px;\r\n    border-radius: 100%;\r\n    background-color: var(--blend-color);\r\n    mix-blend-mode: exclusion;\r\n    margin-bottom: 1rem;\r\n    margin-top: 2rem;\r\n    overflow: hidden;\r\n}\r\n  \r\n.hero h1 {\r\n    font-size: 5rem;\r\n    margin-bottom: 1rem;\r\n}\r\n\r\n.hero h2 {\r\n    font-size: 2rem;\r\n    margin-bottom: 1rem;\r\n}\r\n\r\n.chevron {\r\n    animation: moveUpDown 2s ease-in-out infinite;\r\n}\r\n\r\n.about {\r\n    padding: 2rem;\r\n    opacity: 0;\r\n}\r\n\r\n.about.visible {\r\n    animation: slideInLeft 1s ease-out forwards;\r\n}\r\n  \r\n\r\n.about-content {\r\n    max-width: 800px;\r\n    margin: 0 auto;\r\n}\r\n\r\n.about-content h2 {\r\n    font-size: 2rem;\r\n    margin-bottom: 1rem;\r\n}\r\n\r\n.about-content p {\r\n    font-size: 1.1rem;\r\n    line-height: 1.5;\r\n    margin-bottom: 1rem;\r\n}\r\n  \r\n.projects {\r\n    padding: 2rem;\r\n}\r\n\r\n.featured {\r\n    display: flex;\r\n    flex-direction: row;\r\n    justify-content: space-between;\r\n    width: 100%;\r\n    margin-bottom: 2rem;\r\n}\r\n\r\n.other-projects {\r\n    display: grid;\r\n    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));\r\n    gap: 1rem;\r\n}\r\n\r\n.skills {\r\n    display: grid;\r\n    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));\r\n    gap: 1rem;\r\n    padding: 2rem;\r\n}\r\n\r\n.contact {\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    padding: 2rem;\r\n}\r\n\r\n.back-to-top {\r\n    display: none;\r\n    position: fixed;\r\n    bottom: 20px;\r\n    right: 20px;\r\n    background-color: #73d4fe;\r\n    color: #ffffff;\r\n    border: none;\r\n    padding: 10px 20px;\r\n    font-size: 14px;\r\n    cursor: pointer;\r\n    border-radius: 4px;\r\n    z-index: 100;\r\n}\r\n\r\n.back-to-top.visible {\r\n    display: block;\r\n}\r\n\r\n@media (max-width: 768px) {\r\n    .nav-menu {\r\n        display: none;\r\n    }\r\n  \r\n    .hamburger {\r\n        display: flex;\r\n    }\r\n}\r\n\r\n@keyframes slideInLeft {\r\n    from {\r\n        transform: translateX(-100%);\r\n        opacity: 0;\r\n    }\r\n    to {\r\n        transform: translateX(0);\r\n        opacity: 1;\r\n    }\r\n}\r\n\r\n@keyframes moveUpDown {\r\n    0%, 100% {\r\n        transform: translateY(0);\r\n    }\r\n    50% {\r\n        transform: translateY(-10px);\r\n    }\r\n  }"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -127,41 +122,6 @@ module.exports = function (cssWithMappingToString) {
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/dist/runtime/getUrl.js":
-/*!********************************************************!*\
-  !*** ./node_modules/css-loader/dist/runtime/getUrl.js ***!
-  \********************************************************/
-/***/ ((module) => {
-
-
-
-module.exports = function (url, options) {
-  if (!options) {
-    options = {};
-  }
-  if (!url) {
-    return url;
-  }
-  url = String(url.__esModule ? url.default : url);
-
-  // If url is already wrapped in quotes, remove them
-  if (/^['"].*['"]$/.test(url)) {
-    url = url.slice(1, -1);
-  }
-  if (options.hash) {
-    url += options.hash;
-  }
-
-  // Should url be wrapped?
-  // See https://drafts.csswg.org/css-values-3/#urls
-  if (/["'() \t\n]|(%20)/.test(url) || options.needQuotes) {
-    return "\"".concat(url.replace(/"/g, '\\"').replace(/\n/g, "\\n"), "\"");
-  }
-  return url;
-};
-
-/***/ }),
-
 /***/ "./node_modules/css-loader/dist/runtime/sourceMaps.js":
 /*!************************************************************!*\
   !*** ./node_modules/css-loader/dist/runtime/sourceMaps.js ***!
@@ -187,6 +147,34 @@ module.exports = function (item) {
 
 /***/ }),
 
+/***/ "./src/images/hero-bkg.jpg":
+/*!*********************************!*\
+  !*** ./src/images/hero-bkg.jpg ***!
+  \*********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "images/hero-bkg.jpg");
+
+/***/ }),
+
+/***/ "./src/images/selfie-pic-paint.jpg":
+/*!*****************************************!*\
+  !*** ./src/images/selfie-pic-paint.jpg ***!
+  \*****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "images/selfie-pic-paint.jpg");
+
+/***/ }),
+
 /***/ "./src/styles.css":
 /*!************************!*\
   !*** ./src/styles.css ***!
@@ -209,7 +197,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! !../node_modules/style-loader/dist/runtime/styleTagTransform.js */ "./node_modules/style-loader/dist/runtime/styleTagTransform.js");
 /* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _node_modules_css_loader_dist_cjs_js_styles_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../node_modules/css-loader/dist/cjs.js!./styles.css */ "./node_modules/css-loader/dist/cjs.js!./src/styles.css");
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_1_use_1_node_modules_resolve_url_loader_index_js_node_modules_sass_loader_dist_cjs_js_ruleSet_1_rules_1_use_3_styles_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!../node_modules/resolve-url-loader/index.js!../node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[3]!./styles.css */ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/resolve-url-loader/index.js!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[3]!./src/styles.css");
 
       
       
@@ -231,12 +219,12 @@ options.setAttributes = (_node_modules_style_loader_dist_runtime_setAttributesWi
 options.domAPI = (_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default());
 options.insertStyleElement = (_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default());
 
-var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_styles_css__WEBPACK_IMPORTED_MODULE_6__["default"], options);
+var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_1_use_1_node_modules_resolve_url_loader_index_js_node_modules_sass_loader_dist_cjs_js_ruleSet_1_rules_1_use_3_styles_css__WEBPACK_IMPORTED_MODULE_6__["default"], options);
 
 
 
 
-       /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_styles_css__WEBPACK_IMPORTED_MODULE_6__["default"] && _node_modules_css_loader_dist_cjs_js_styles_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals ? _node_modules_css_loader_dist_cjs_js_styles_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals : undefined);
+       /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_1_use_1_node_modules_resolve_url_loader_index_js_node_modules_sass_loader_dist_cjs_js_ruleSet_1_rules_1_use_3_styles_css__WEBPACK_IMPORTED_MODULE_6__["default"] && _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_1_use_1_node_modules_resolve_url_loader_index_js_node_modules_sass_loader_dist_cjs_js_ruleSet_1_rules_1_use_3_styles_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals ? _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_1_use_1_node_modules_resolve_url_loader_index_js_node_modules_sass_loader_dist_cjs_js_ruleSet_1_rules_1_use_3_styles_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals : undefined);
 
 
 /***/ }),
@@ -506,16 +494,6 @@ function styleTagTransform(css, styleElement) {
 }
 module.exports = styleTagTransform;
 
-/***/ }),
-
-/***/ "./src/images/hero-bkg.jpg":
-/*!*********************************!*\
-  !*** ./src/images/hero-bkg.jpg ***!
-  \*********************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-module.exports = __webpack_require__.p + "95e29228b3f0b0fe9efd.jpg";
-
 /***/ })
 
 /******/ 	});
@@ -543,9 +521,6 @@ module.exports = __webpack_require__.p + "95e29228b3f0b0fe9efd.jpg";
 /******/ 		// Return the exports of the module
 /******/ 		return module.exports;
 /******/ 	}
-/******/ 	
-/******/ 	// expose the modules object (__webpack_modules__)
-/******/ 	__webpack_require__.m = __webpack_modules__;
 /******/ 	
 /************************************************************************/
 /******/ 	/* webpack/runtime/compat get default export */
@@ -620,32 +595,6 @@ module.exports = __webpack_require__.p + "95e29228b3f0b0fe9efd.jpg";
 /******/ 		__webpack_require__.p = scriptUrl;
 /******/ 	})();
 /******/ 	
-/******/ 	/* webpack/runtime/jsonp chunk loading */
-/******/ 	(() => {
-/******/ 		__webpack_require__.b = document.baseURI || self.location.href;
-/******/ 		
-/******/ 		// object to store loaded and loading chunks
-/******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
-/******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
-/******/ 		var installedChunks = {
-/******/ 			"main": 0
-/******/ 		};
-/******/ 		
-/******/ 		// no chunk on demand loading
-/******/ 		
-/******/ 		// no prefetching
-/******/ 		
-/******/ 		// no preloaded
-/******/ 		
-/******/ 		// no HMR
-/******/ 		
-/******/ 		// no HMR manifest
-/******/ 		
-/******/ 		// no on chunks loaded
-/******/ 		
-/******/ 		// no jsonp function
-/******/ 	})();
-/******/ 	
 /******/ 	/* webpack/runtime/nonce */
 /******/ 	(() => {
 /******/ 		__webpack_require__.nc = undefined;
@@ -660,6 +609,10 @@ var __webpack_exports__ = {};
   \**********************/
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _styles_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles.css */ "./src/styles.css");
+/* harmony import */ var _images_selfie_pic_paint_jpg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./images/selfie-pic-paint.jpg */ "./src/images/selfie-pic-paint.jpg");
+/* harmony import */ var _images_hero_bkg_jpg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./images/hero-bkg.jpg */ "./src/images/hero-bkg.jpg");
+
+
 
 document.addEventListener("DOMContentLoaded", function () {
   // navbar & hamburger section
@@ -681,6 +634,13 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     });
   });
+
+  // background image because webpack can be difficult to fight with at times
+  function setBackgroundImage() {
+    var heroElement = document.querySelector('.hero');
+    heroElement.style.backgroundImage = "linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(".concat(_images_hero_bkg_jpg__WEBPACK_IMPORTED_MODULE_2__["default"], ")");
+  }
+  document.addEventListener('DOMContentLoaded', setBackgroundImage);
 
   // About section intersection observer & functionality
   var aboutSection = document.querySelector("#about");
