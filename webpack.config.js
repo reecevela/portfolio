@@ -18,19 +18,22 @@ module.exports = {
         }
       },
       {
-        test: /\.html$/,
-        loader: 'html-loader',
-      },
-      {
         test: /\.css$/,
         use: [
           "style-loader",
           {
             loader: "css-loader",
             options: {
-              url: true,
-            },
+              sourceMap: true,
+            }
           },
+          "resolve-url-loader",
+          {
+            loader: "sass-loader",
+            options: {
+              sourceMap: true,
+            }
+          }
         ],
       },
       {

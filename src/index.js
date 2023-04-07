@@ -1,4 +1,6 @@
-import './styles.css'
+import './styles.css';
+import Selfie from './images/selfie-pic-paint.jpg';
+import HeroBkg from './images/hero-bkg.jpg';
 
 document.addEventListener("DOMContentLoaded", () => {
 
@@ -23,6 +25,14 @@ document.addEventListener("DOMContentLoaded", () => {
       target.scrollIntoView({ behavior: "smooth" });
     });
   });
+
+  // background image because webpack can be difficult to fight with at times
+  function setBackgroundImage() {
+    const heroElement = document.querySelector('.hero');
+    heroElement.style.backgroundImage = `linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(${HeroBkg})`;
+  }
+  
+  setBackgroundImage();
   
   
   
