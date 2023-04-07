@@ -1,6 +1,7 @@
 import './styles.css';
 import Selfie from './images/selfie-pic-paint.jpg';
 import HeroBkg from './images/hero-bkg.jpg';
+import AIITSnip from './images/aiitsupport-snip.png';
 
 document.addEventListener("DOMContentLoaded", () => {
 
@@ -34,8 +35,6 @@ document.addEventListener("DOMContentLoaded", () => {
   
   setBackgroundImage();
   
-  
-  
   // About section intersection observer & functionality
   const aboutSection = document.querySelector("#about");
   const options = {
@@ -57,11 +56,36 @@ document.addEventListener("DOMContentLoaded", () => {
     observer.observe(aboutSection);
   }
 
+  // projects section
+  const techTagWrapper = document.querySelector('.tech-used');
+  const techTags = [
+    "Django",
+    "GPT API",
+    "Python",
+    "Postgres",
+    "Cloud Deployment",
+    "Databases",
+    "Linux",
+    "Git",
+    "JS",
+    "HTML",
+    "CSS",
+    "Nginx",
+    "Gunicorn",
+  ]
+
+  for (const tag of techTags) {
+    const div = document.createElement('div');
+    div.classList = 'tech';
+    div.textContent = tag;
+    techTagWrapper.appendChild(div);
+  }
+
   // back to top button functionality
   const backToTop = document.getElementById("back-to-top");
   const navBar = document.querySelector("nav");
 
-  // button appears when nav bar is not in the viee
+  // button appears when nav bar is not in the view
   window.addEventListener("scroll", () => {
     const navBottomPosition = navBar.getBoundingClientRect().bottom;
     if (navBottomPosition < 0) {
