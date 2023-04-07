@@ -1,0 +1,53 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Here's my personal portfolio of projects, go check it out!\"",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --open",
+    "live": "webpack serve --open",
+    "deploy": "npm run build && gh-pages -d dist",
+    "watch": "webpack --watch",
+    "build": "webpack",
+    "test": "jest --runInBand"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/reecevela/portfolio.git"
+  },
+  "keywords": [
+    "portfolio",
+    "Reece",
+    "Vela",
+    "development",
+    "coding",
+    "projects",
+    "muscatine",
+    "iowa"
+  ],
+  "author": "Reece Vela",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/reecevela/portfolio/issues"
+  },
+  "homepage": "https://github.com/reecevela/portfolio#readme",
+  "devDependencies": {
+    "@babel/core": "^7.21.3",
+    "@babel/preset-env": "^7.20.2",
+    "babel-loader": "^9.1.2",
+    "css-loader": "^6.7.3",
+    "file-loader": "^6.2.0",
+    "gh-pages": "^5.0.0",
+    "html-loader": "^4.2.0",
+    "html-webpack-plugin": "^5.5.0",
+    "jest": "^29.4.3",
+    "jest-cli": "^29.4.3",
+    "style-loader": "^3.3.2",
+    "webpack": "^5.76.3",
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-server": "^4.13.2"
+  },
+  "jest": {
+    "verbose": true
+  }
+}
