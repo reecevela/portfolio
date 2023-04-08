@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // navbar & hamburger section
   const hamburger = document.querySelector(".hamburger");
   const navMenu = document.querySelector(".nav-menu");
-  const navLinks = document.querySelectorAll(".nav-menu a");
+  const navLinks = document.querySelectorAll(".nav-menu li a");
 
   hamburger.addEventListener("click", () => {
     navMenu.classList.toggle("show");
@@ -22,12 +22,10 @@ document.addEventListener("DOMContentLoaded", () => {
   navLinks.forEach((link) => {
     link.addEventListener("click", (event) => {
       event.preventDefault();
-      const target = document.querySelector(event.target.getAttribute("href"));
-  
+      const target = document.querySelector(event.currentTarget.getAttribute("href"));
       if (navMenu.classList.contains("show")) {
         navMenu.classList.remove("show");
       }
-  
       target.scrollIntoView({ behavior: "smooth" });
     });
   });
