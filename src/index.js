@@ -1,12 +1,12 @@
 import './styles.css';
-import Selfie from './images/selfie-pic-paint.jpg';
-import HeroBkg from './images/hero-bkg.jpg';
-import SkillsBkg from './images/skills-bkg.png';
-import AIITSnip from './images/aiitsupport-snip.png';
-import Weather from './images/repos/weather.png';
-import shipping from './images/repos/shipping.png';
-import SocialMedia from './images/repos/social-media-dashboard.png';
-import BST from './images/repos/binary-search-tree.png';
+import Selfie from './images/selfie-pic-paint.webp';
+import HeroBkg from './images/hero-bkg.webp';
+import SkillsBkg from './images/skills-bkg.webp';
+import AIITSnip from './images/aiitsupport-snip.webp';
+import Weather from './images/repos/weather.webp';
+import shipping from './images/repos/shipping.webp';
+import SocialMedia from './images/repos/social-media-dashboard.webp';
+import BST from './images/repos/binary-search-tree.webp';
 
 document.addEventListener("DOMContentLoaded", () => {
 
@@ -102,8 +102,9 @@ document.addEventListener("DOMContentLoaded", () => {
     div.appendChild(heading);
   
     const img = document.createElement('img');
-    img.src = `./images/${repo}.png`;
+    img.src = `./images/${repo}.webp`;
     img.alt = `${title} image`;
+    img.loading = 'lazy';
     div.appendChild(img);
   
     const links = document.createElement('div');
@@ -178,5 +179,6 @@ document.addEventListener("DOMContentLoaded", () => {
       });
   });
 
+  document.getElementById("current-year").textContent = new Date().getFullYear();
 
 });

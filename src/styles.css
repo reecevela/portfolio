@@ -324,7 +324,7 @@ nav {
 
 .skills-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
     padding: 2rem;
     position: relative;
@@ -359,6 +359,74 @@ nav {
     align-items: center;
     padding: 2rem;
 }
+
+.contact h2 {
+    margin-bottom: 1rem;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 500px;
+}
+
+.contact label {
+    margin-top: 1rem;
+}
+
+.contact input, .contact textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: inherit;
+}
+
+.contact textarea {
+    resize: vertical;
+}
+
+.contact input[type="submit"] {
+    margin-top: 1rem;
+    background-color: #484668;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 0.5rem;
+}
+
+.contact input[type="submit"]:hover {
+    background-color: #3c3a62;
+}  
+
+.submit-button {
+    background-color: #484668;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #3c3a62;
+}
+
+footer {
+    background-color: white;
+    color: black;
+    padding: 1rem;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}  
 
 .back-to-top {
     display: none;
