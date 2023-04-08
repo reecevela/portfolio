@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // projects section
-  const techTagWrapper = document.querySelector('.tech-used');
+  const techTagContainer = document.querySelector('.tech-used');
   const techTags = [
     "Django",
     "GPT API",
@@ -78,8 +78,10 @@ document.addEventListener("DOMContentLoaded", () => {
     const div = document.createElement('div');
     div.classList = 'tech';
     div.textContent = tag;
-    techTagWrapper.appendChild(div);
+    techTagContainer.appendChild(div);
   }
+
+  const projectContainer = document.querySelector('.other-projects');
 
   // back to top button functionality
   const backToTop = document.getElementById("back-to-top");

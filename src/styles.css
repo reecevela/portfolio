@@ -178,8 +178,8 @@ nav {
 .featured {
     display: flex;
     align-items: flex-start;
-    justify-content: flex-start;
-    flex-flow: row wrap;
+    justify-content: flex-end;
+    flex-flow: row-reverse wrap;
 }
 
 .featured-content {
@@ -230,10 +230,49 @@ nav {
     gap: 1rem;
 }
 
-/* Hide the scrollbar */
-.other-projects::-webkit-scrollbar {
-    display: none;
+.other-projects {
+    display: flex;
+    overflow-x: scroll;
+    gap: 1rem;
 }
+
+.project-card {
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    padding: 1rem;
+    width: 250px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.project-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.project-card h4 {
+    margin-bottom: 1rem;
+}
+
+.project-card .links {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+}
+
+.project-card .links a {
+    padding: 0.25rem 0.5rem;
+    background-color: #484668;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+}
+  
   
 
 .skills {

@@ -6,10 +6,10 @@
   "scripts": {
     "start": "webpack-dev-server --open",
     "live": "webpack serve --open",
-    "deploy": "npm run build && gh-pages -d dist",
     "watch": "webpack --watch",
     "build": "webpack",
-    "test": "jest --runInBand"
+    "test": "jest --runInBand",
+    "deploy": "git push origin :gh-pages && git subtree push --prefix dist origin gh-pages"
   },
   "repository": {
     "type": "git",
