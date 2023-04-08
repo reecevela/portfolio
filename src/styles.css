@@ -156,7 +156,7 @@ nav {
   
 
 .about-content {
-    max-width: 800px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
@@ -173,6 +173,17 @@ nav {
 
 .projects {
     padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+    width: 100%;
+    margin: auto;
+}
+
+.projects h2, .projects h3 {
+    width: 100%;
+    max-width: calc(1000px);
 }
 
 .featured {
@@ -225,17 +236,38 @@ nav {
 }
 
 .other-projects {
+    margin: 1em;
+    margin-left: -1em;
+    padding-bottom: 1em;
     display: flex;
     overflow-x: scroll;
     gap: 1rem;
+    max-width: clamp(200px, 80vw, 1000px);
+    /* Firefox scrollbar support */
+    scrollbar-width: thin;
+    scrollbar-color: #484668 #f0f0f0;
 }
 
-.other-projects {
-    display: flex;
-    overflow-x: scroll;
-    gap: 1rem;
+/* Webkit-based browser scrollbar styling */
+.other-projects::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
 }
 
+.other-projects::-webkit-scrollbar-track {
+    background-color: #f0f0f0;
+    border-radius: 5px;
+}
+
+.other-projects::-webkit-scrollbar-thumb {
+    background-color: #484668;
+    border-radius: 5px;
+}
+
+.other-projects::-webkit-scrollbar-thumb:hover {
+    background-color: #3c3a62;
+}
+  
 .project-card {
     background-color: #f5f5f5;
     border-radius: 5px;
@@ -271,15 +303,54 @@ nav {
     border-radius: 5px;
     color: white;
     text-decoration: none;
+    text-align: center;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
 }
-  
-  
 
 .skills {
+    position: relative;
+    overflow: hidden;
+}
+
+.skills-parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 4rem 0;
+}
+
+.skills-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
     padding: 2rem;
+    position: relative;
+    z-index: 1;
+    opacity: 0;
+}
+
+.skills-container.visible {
+    animation: fadeIn 1.3s ease-out forwards
+}
+
+.skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.skill i {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.skill p {
+    font-size: 1.1rem;
+    margin: 0;
 }
 
 .contact {
@@ -316,6 +387,9 @@ nav {
     .hamburger {
         display: flex;
     }
+    .skills-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @keyframes slideInLeft {
@@ -336,4 +410,15 @@ nav {
     50% {
         transform: translateY(-10px);
     }
-  }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

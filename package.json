@@ -9,7 +9,8 @@
     "watch": "webpack --watch",
     "build": "webpack",
     "test": "jest --runInBand",
-    "deploy": "git push origin :gh-pages && git subtree push --prefix dist origin gh-pages"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist" 
   },
   "repository": {
     "type": "git",
@@ -30,7 +31,7 @@
   "bugs": {
     "url": "https://github.com/reecevela/portfolio/issues"
   },
-  "homepage": "https://github.com/reecevela/portfolio#readme",
+  "homepage": "https://reece-vela.com",
   "devDependencies": {
     "@babel/core": "^7.21.3",
     "@babel/preset-env": "^7.20.2",
