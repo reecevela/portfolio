@@ -8,6 +8,13 @@ import shipping from './images/repos/shipping.webp';
 import SocialMedia from './images/repos/social-media-dashboard.webp';
 import BST from './images/repos/binary-search-tree.webp';
 
+import React from 'react';
+import { createRoot } from 'react-dom/client';
+import ChatComponent from './ChatComponent';
+
+const root = createRoot(document.getElementById('chatbot'));
+root.render(<ChatComponent />)
+
 document.addEventListener("DOMContentLoaded", () => {
 
   // navbar & hamburger section
